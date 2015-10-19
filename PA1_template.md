@@ -210,7 +210,7 @@ median(steps_each_day_complete$steps)
 complete_data$day <- as.factor(weekdays(complete_data$date))
 ```
 
-##Creating a logical variable "is_weekday" (weekday=TRUE, weekend = FALE) :
+##Creating a logical variable :
 
 ```r
 complete_data$is_weekday <- ifelse(!(complete_data$day %in% c("Saturday","Sunday")), TRUE, FALSE) 
